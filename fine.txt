@@ -1,0 +1,42 @@
+ //PRENDO LE IMMAGINI
+                                    node = htmlDoc.DocumentNode.SelectSingleNode("//*[@id=\"content_area\"]/div/div[1]");
+                                    string[] immagini = node.Descendants("img").Select(a => a.GetAttributeValue("src", "")).ToArray();
+                                    string linkImmagine = immagini[0];
+                                    //OTTENGO NOME IMMAGINE
+                                    string nomeImmagine = item + ".jpg";
+                                    using (WebClient client = new WebClient())
+                                        try
+                                        {
+                                            client.DownloadFile(new Uri(linkImmagine), @"C:\Users\carlo.ingaliso\Desktop\gessner\immagini\" + nomeImmagine);
+                                        }
+                                        catch (ExternalException)
+                                        {
+                                            Console.WriteLine("externale exception");
+                                            Console.WriteLine("Press any key to exit.");
+                                            nomeImmagine = "immagine non esistente";
+                                        }
+                                        catch (ArgumentNullException)
+                                        {
+                                            Console.WriteLine("null exception");
+                                            Console.WriteLine("Press any key to exit.");
+                                            nomeImmagine = "immagine non esistente";
+                                        }
+                                        catch (System.Net.WebException)
+                                        {
+                                            Console.WriteLine("webexception");
+                                            Console.WriteLine("Press any key to exit.");
+                                            nomeImmagine = "immagine non esistente";
+                                        }
+                                    //STAMPO TUTTO
+                                    string daStampare = nomeLevelOne + "|" + codeLevelOne + "|" + nomeLevelDue + "|" + codeLevelTwo + "|" + nomeLevelTre + "|" + codeLevelThree + "|" + item + "|" + descrizione + "|" + productDimension + "|" + material + "|" + weight + "|" + caseDimensions + "|" + casePack + "|" + nomeImmagine + "|";
+                                    Console.WriteLine(daStampare);
+                                    file2.WriteLine(daStampare);
+                                }
+                          
+                        }
+                    }
+                }
+
+            }
+            file2.Close();
+            }
