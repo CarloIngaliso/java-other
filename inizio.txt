@@ -1,0 +1,27 @@
+using System;
+using HtmlAgilityPack;
+using System.Collections.Generic;
+using System.Linq;
+using System.IO;
+using System.Net;
+using System.Runtime.InteropServices;
+using System.Globalization;
+
+namespace GessnerScraper
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Class1 istanza = new Class1();
+            var url = "https://gessnerproducts.com/products/";
+            HtmlWeb web = new HtmlWeb();
+            TextInfo ti = CultureInfo.CurrentCulture.TextInfo;
+            var htmlDoc = web.Load(url);
+            //STAMPO L'INIZIO
+            string intestazione = "Level 1|Code Level 1|Level 2|Code Level 2|Level 3|Level 3 Code|Description|Item|Product Dimensions|Material|Weight|Case Dimensions|Case Pack|Image Name|\n";
+            StreamWriter file2 = new StreamWriter(@"C:\Users\carlo.ingaliso\Desktop\gessner\database.txt");
+            file2.WriteLine(intestazione);
+            //OTTENGO I LEVEL 1
+            var node = htmlDoc.DocumentNode.SelectSingleNode("//*[@id=\"post-1614\"]/div");
+            string[] levOne = node.Descendants("a").Select(a => a.GetAttributeValue("href", "")).Distinct().ToArray();
