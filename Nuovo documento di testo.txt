@@ -1,0 +1,13 @@
+CPU: Intel - Core i7-6700K 4 GHz Quad-Core Processor	https://www.amazon.it/Intel-BX80662I76700K-I7-6700K-Processore-Argento/dp/B010T6DQTQ/ref=sr_1_2?ie=UTF8&qid=1550045339&sr=8-2&keywords=i7+7700k
+CPU Cooler:
+Pasta Termica:
+RAM: Corsair Vengeance LPX 32GB DDR4-3200 Memorie per Desktop a Elevate Prestazioni, 32 GB (2 X 16 GB), DDR4, 3200 MHz, C16 XMP 2.0, Nero	https://www.amazon.it/Corsair-Vengeance-DDR4-3200-Memorie-Prestazioni/dp/B016ORTNI2/ref=sr_1_1?ie=UTF8&qid=1550045477&sr=8-1&keywords=vengeance%2B32&th=1
+Storage: Western Digital WD Red HDD Interno, 3000 GB, SATA III, 6000 Mbit/s, 5400 rpm, 64 MB, Display 3.50 Pollici	https://www.amazon.it/Western-Digital-Interno-6000-Pollici/dp/B008JJLW4M/ref=sr_1_1?ie=UTF8&qid=1550045580&sr=8-1&keywords=western%2Bdigital%2B6%2Btb&th=1
+SSD: Samsung T5 MU- PA1T0B/EU SSD Portatile da 1TB, USB 3.1 Type-C, Fino a 540 MB/s 	https://www.amazon.it/Samsung-PA1T0B-EU-Portatile-Type-C/dp/B074M774TW/ref=sr_1_1_sspa?ie=UTF8&qid=1550045830&sr=8-1-spons&keywords=ssd+1TB&psc=1
+GPU:
+Case: 
+Power Supply: Corsair RM850x Alimentatore PC, Completamente Modulare, 80 Plus Gold, 850 Watt, EU, Nero 	https://www.amazon.it/Corsair-RM750x-Alimentatore-Completamente-Modulare/dp/B079QCFB1M/ref=sr_1_1?ie=UTF8&qid=1550046274&sr=8-1&keywords=rm750x&th=1
+OS: W10
+Case Fan:
+Monitor:
+Keyboard:
